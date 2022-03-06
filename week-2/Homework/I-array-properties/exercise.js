@@ -5,18 +5,22 @@
 
 */
 
-function isEmpty(arr) {
-  return; // complete this statement
+function first(arr) {
+  return arr[0];
+}
+
+function last(arr) {
+  return arr[arr.length - 1];
 }
 
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 var numbers = [1, 2, 3];
-var names = [];
+var names = ["Ben", "Bean", "Bruce", "Bros"];
 
-console.log(isEmpty(numbers));
-console.log(isEmpty(names));
+console.log(first(numbers));
+console.log(last(names));
 
 /* 
   EXPECTED RESULT

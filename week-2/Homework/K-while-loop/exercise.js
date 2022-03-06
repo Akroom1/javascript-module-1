@@ -6,10 +6,26 @@
 
 */
 
+function sumTillNum(num) {
+  if (num < 0) {
+    throw Error("pass in a positive number!");
+  }
+
+  let i = num;
+  let sumResult = 0;
+  while (i > 0) {
+    sumResult = sumResult + i;
+    i = i - 1;
+  }
+  return sumResult;
+}
+
 let n = 10;
 
-function sumTillNum(num){
-	//your code here
+console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));
+
+if (sumTillNum(n) === (n * (n + 1)) / 2) {
+  console.log("Nice");
 }
 
 console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));
