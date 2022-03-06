@@ -1,4 +1,6 @@
-var apolloCountdownMessage = "all engine running... LIFT-OFF!";
-var countdown = 8;
 
-console.log(apolloCountdownMessage);
+let num = 8 
+while (num <= 0){
+console.log(`num === ${num}`)
+num = num +1
+}
